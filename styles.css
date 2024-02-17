@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* main container  */
+
+#main {
+    padding-top: 40px;
+    background-color: #1d1d23;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+#main>h1 {
+    color: white;
+}
+
+.timers-form {
+    width: 849px;
+    height: 132px;
+}
+
+form {
+    background-color: #34344A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 849px;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+form>p,
+.running-timer>p {
+    color: white;
+    font-size: 30px;
+}
+
+.input-Wrraper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.input-Wrraper>p {
+    color: white;
+    font-size: 45px;
+}
+
+input[type="number"] {
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    width: 75px;
+    height: 45px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    font-size: 50px;
+}
+
+input[type="number"]::placeholder {
+    color: white;
+    font-size: 50px;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+form>button,
+.Delete {
+    background-color: #F0F757;
+    width: 124px;
+    height: 52px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 21.09px;
+    font-weight: 500;
+}
+
+form>button:hover {
+    opacity: 0.9;
+}
+
+
+/* section 2 current-timers */
+
+#current-timers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 849px;
+}
+
+#current-timers-head {
+    width: 413px;
+    height: 66px;
+    background-color: #39393E;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 52px;
+}
+
+#current-timers-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+}
+
+#timers-item {
+    width: 100%;
+}
+
+#current-timers>h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height:
+        28.13px;
+}
+
+.running-timer {
+    background-color: #34344A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:  132px;
+    width: 849px;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.completed-timer {
+    display: flex;
+    align-items: center;
+    background-color: #F0F757;
+    width: 849px;
+    height:  132px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.completed-timer>p {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #34344A;
+    margin-left: 30%;
+}
+
+.stop {
+    background-color: #34344A;
+    color: white;
+    position: absolute;
+    right: 5%;
+}
